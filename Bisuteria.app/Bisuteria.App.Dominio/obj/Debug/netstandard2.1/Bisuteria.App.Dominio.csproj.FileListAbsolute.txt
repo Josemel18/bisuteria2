@@ -1,0 +1,8 @@
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\bin\Debug\netstandard2.1\Bisuteria.App.Dominio.deps.json
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\bin\Debug\netstandard2.1\Bisuteria.App.Dominio.dll
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\bin\Debug\netstandard2.1\Bisuteria.App.Dominio.pdb
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\obj\Debug\netstandard2.1\Bisuteria.App.Dominio.csprojAssemblyReference.cache
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\obj\Debug\netstandard2.1\Bisuteria.App.Dominio.AssemblyInfoInputs.cache
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\obj\Debug\netstandard2.1\Bisuteria.App.Dominio.AssemblyInfo.cs
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\obj\Debug\netstandard2.1\Bisuteria.App.Dominio.dll
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Dominio\obj\Debug\netstandard2.1\Bisuteria.App.Dominio.pdb

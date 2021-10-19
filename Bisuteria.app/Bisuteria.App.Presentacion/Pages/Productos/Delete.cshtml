@@ -1,0 +1,40 @@
+﻿@page
+@model Bisuteria.App.Presentacion.Pages.DeleteModel
+@{
+    int productoId = Model.producto.id;
+}
+
+<h2>Eliminar Producto @Model.producto.nombre @Model.producto.precioventa</h2>
+<form method="post">
+    <input type="hidden" asp-for="producto.id" />    
+    
+    <div class="form-group">
+        <label asp-for="producto.nombre"></label>
+        <input asp-for="producto.nombre" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="producto.nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="producto.preciocompra"></label>
+        <input asp-for="producto.preciocompra" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="producto.preciocompra"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="producto.precioventa"></label>
+        <input asp-for="producto.precioventa" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="producto.precioventa"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="producto.stock"></label>
+        <input asp-for="producto.stock" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="producto.stock"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="producto.peso"></label>
+        <input asp-for="producto.peso" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="producto.peso"></span>
+    </div>
+
+    <button type="submit" class="btn btn-danger">ELIMINAR</button>    
+</form>
+
+<a asp-page="./List" class="btn-default">Regresar a la lista de productos </a>

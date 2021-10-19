@@ -1,0 +1,30 @@
+﻿@page
+@model Bisuteria.App.Presentacion.DetailsModel
+@{
+}
+
+<h2>Datos Detallados de Cliente @Model.cliente.identificacion @Model.cliente.nombre @Model.cliente.apellido</h2>
+<div>
+    ID: @Model.cliente.id
+</div>
+<div>
+    IDENTIFICACIÓN: @Model.cliente.identificacion
+</div>
+<div>
+    NOMBRES: @Model.cliente.nombre
+</div>
+<div>
+    APELLIDOS: @Model.cliente.apellido
+</div>
+<div>
+    DIRECCION: @Model.cliente.direccion
+</div>
+<div>
+    TELEFONO: @Model.cliente.telefono
+</div>
+<div>
+    CORREO: @Model.cliente.correo
+</div>
+
+
+<a asp-page="./List" class="btn btn-default">Volver a la Lista de clientes.. </a>

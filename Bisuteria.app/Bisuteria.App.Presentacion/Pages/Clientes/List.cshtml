@@ -1,0 +1,59 @@
+﻿@page
+@model Bisuteria.App.Presentacion.Pages.ListModel
+@{
+    var searchString = Model.searchString;
+}
+
+<h1>Clientes</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./List")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<a asp-page=".\Edit" class="btn btn-primary btn-lg">Crear Nuevo Cliente</a>
+<table class="table">
+    <thead>
+            <tr>
+                <td><h4>Id</h4></td>
+                <td><h4>Identificacion</h4></td>
+                <td><h4>Nombre</h4></td>
+                <td><h4>apellido</h4></td>
+            </tr>
+
+    </thead>
+    @foreach (var cliente in Model.clientes)
+    {
+        
+        <tbody>
+            <tr>
+                <td>@cliente.id</td>
+                <td>@cliente.identificacion</td>
+                <td>@cliente.nombre</td>
+                <td>@cliente.apellido</td>
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-clienteId="@cliente.id">
+                        Detalle</a>
+                </td>
+
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-clienteId="@cliente.id">
+                        Editar
+                    </a>
+                </td> 
+
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./Delete" asp-route-clienteId="@cliente.id">
+                        Eliminar
+                    </a>
+                </td> 
+            </tr>
+        </tbody>
+    }
+</table>

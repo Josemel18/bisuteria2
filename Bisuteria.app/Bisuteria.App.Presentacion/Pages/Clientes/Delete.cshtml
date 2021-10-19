@@ -1,0 +1,45 @@
+﻿@page
+@model Bisuteria.App.Presentacion.DeleteModel
+@{
+    int clienteId = Model.cliente.id;
+}
+
+<h2>Eliminar Cliente @Model.cliente.nombre @Model.cliente.apellido @Model.cliente.identificacion</h2>
+<form method="post">
+    <input type="hidden" asp-for="cliente.id" />    
+    
+    <div class="form-group">
+        <label asp-for="cliente.identificacion"></label>
+        <input asp-for="cliente.identificacion" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.identificacion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cliente.nombre"></label>
+        <input asp-for="cliente.nombre" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cliente.apellido"></label>
+        <input asp-for="cliente.apellido" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cliente.direccion"></label>
+        <input asp-for="cliente.direccion" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.direccion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cliente.telefono"></label>
+        <input asp-for="cliente.telefono" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="cliente.correo"></label>
+        <input asp-for="cliente.correo" class="form-control" disabled>
+        <span class="text-danger" asp-validation-for="cliente.correo"></span>
+    </div>
+
+    <button type="submit" class="btn btn-danger">ELIMINAR</button>    
+</form>
+
+<a asp-page="./List" class="btn-default">Regresar a la lista de clientes </a>

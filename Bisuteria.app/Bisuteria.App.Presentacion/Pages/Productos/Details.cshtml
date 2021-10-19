@@ -1,0 +1,27 @@
+﻿@page
+@model Bisuteria.App.Presentacion.Pages.DetailsModel
+@{
+}
+
+<h2>Datos Detallados de Producto @Model.producto.nombre @Model.producto.precioventa</h2>
+<div>
+    ID: @Model.producto.id
+</div>
+<div>
+    NOMBRE: @Model.producto.nombre
+</div>
+<div>
+    PRECIO DE COMPRA: @Model.producto.preciocompra
+</div>
+<div>
+    PRECIO DE VENTA: @Model.producto.precioventa
+</div>
+<div>
+    STOCK: @Model.producto.stock
+</div>
+<div>
+    PESO: @Model.producto.peso
+</div>
+
+
+<a asp-page="./List" class="btn btn-default">Volver a la Lista de productos.. </a>

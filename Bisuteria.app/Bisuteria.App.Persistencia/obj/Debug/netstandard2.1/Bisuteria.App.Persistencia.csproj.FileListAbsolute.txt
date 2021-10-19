@@ -1,0 +1,11 @@
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\bin\Debug\netstandard2.1\Bisuteria.App.Persistencia.deps.json
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\bin\Debug\netstandard2.1\Bisuteria.App.Persistencia.dll
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\bin\Debug\netstandard2.1\Bisuteria.App.Persistencia.pdb
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\bin\Debug\netstandard2.1\Bisuteria.App.Dominio.dll
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\bin\Debug\netstandard2.1\Bisuteria.App.Dominio.pdb
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.csprojAssemblyReference.cache
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.AssemblyInfoInputs.cache
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.AssemblyInfo.cs
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.csproj.CopyComplete
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.dll
+D:\proyectos_ciclo3\Bisuteria.App\Bisuteria.App.Persistencia\obj\Debug\netstandard2.1\Bisuteria.App.Persistencia.pdb

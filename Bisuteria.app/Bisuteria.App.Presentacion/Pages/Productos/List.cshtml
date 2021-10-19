@@ -1,0 +1,59 @@
+﻿@page
+@model Bisuteria.App.Presentacion.ListModel
+@{
+    var searchString = Model.searchString;
+}
+
+<h1>Productos</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./List")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<a asp-page=".\Edit" class="btn btn-primary btn-lg">Crear Nuevo Producto</a>
+<table class="table">
+    <thead>
+            <tr>
+                <td><h4>Id</h4></td>
+                <td><h4>Nombre</h4></td>
+                <td><h4>Precio de venta</h4></td>
+                <td><h4>Stock</h4></td>
+            </tr>
+
+    </thead>
+    @foreach (var producto in Model.productos)
+    {
+        
+        <tbody>
+            <tr>
+                <td>@producto.id</td>
+                <td>@producto.nombre</td>
+                <td>@producto.precioventa</td>
+                <td>@producto.stock</td>
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-productoId="@producto.id">
+                        Detalle</a>
+                </td>
+
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-productoId="@producto.id">
+                        Editar
+                    </a>
+                </td> 
+
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./Delete" asp-route-productoId="@producto.id">
+                        Eliminar
+                    </a>
+                </td> 
+            </tr>
+        </tbody>
+    }
+</table>
